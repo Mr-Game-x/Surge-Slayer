@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://djrqvfdhbw08"]
+
+[ext_resource type="Script" path="res://scripts/goblinController.gd" id="1_k1nmd"]
+[ext_resource type="SpriteFrames" uid="uid://dbllj1r0qstp8" path="res://Animaciones/goblin_anim.tres" id="1_q3738"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_qd0sg"]
+radius = 0.214024
+height = 0.530896
+
+[node name="goblin" type="CharacterBody3D"]
+script = ExtResource("1_k1nmd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00690085, 0.250511, -0.02778)
+visible = false
+shape = SubResource("CapsuleShape3D_qd0sg")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(-1.505, 0, 1.31571e-07, 0, 1.505, 0, -1.31571e-07, 0, -1.505, 6.22123e-05, 0.392316, -0.00222409)
+sprite_frames = ExtResource("1_q3738")
+animation = &"atk"
+frame = 7
+frame_progress = 1.0

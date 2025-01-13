@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://d025box2g2xcd"]
+
+[ext_resource type="Script" path="res://scripts/NewController.gd" id="1_f6ahm"]
+[ext_resource type="SpriteFrames" uid="uid://bef4jtxqc2i2y" path="res://Animaciones/player_anim.tres" id="2_sokjr"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_e04qo"]
+radius = 0.160162
+height = 0.857204
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_f6ahm")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.430179, 0)
+sprite_frames = ExtResource("2_sokjr")
+animation = &"Idle_right"
+frame_progress = 0.373768
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.44642, 0)
+shape = SubResource("CapsuleShape3D_e04qo")

@@ -1,0 +1,79 @@
+[gd_resource type="SpriteFrames" load_steps=11 format=3 uid="uid://can180mvvokdr"]
+
+[ext_resource type="Texture2D" uid="uid://ddefv8fe4qrsh" path="res://Sprites/sprPlayer_down.png" id="1_nt5cy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ypp6i"]
+atlas = ExtResource("1_nt5cy")
+region = Rect2(0, 0, 17, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ilkg"]
+atlas = ExtResource("1_nt5cy")
+region = Rect2(17, 0, 17, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_156h3"]
+atlas = ExtResource("1_nt5cy")
+region = Rect2(34, 0, 17, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s6rqq"]
+atlas = ExtResource("1_nt5cy")
+region = Rect2(0, 17, 17, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hv7t5"]
+atlas = ExtResource("1_nt5cy")
+region = Rect2(17, 17, 17, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sdoq6"]
+atlas = ExtResource("1_nt5cy")
+region = Rect2(34, 17, 17, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s21ib"]
+atlas = ExtResource("1_nt5cy")
+region = Rect2(0, 34, 17, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vkln8"]
+atlas = ExtResource("1_nt5cy")
+region = Rect2(17, 34, 17, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6564e"]
+atlas = ExtResource("1_nt5cy")
+region = Rect2(34, 34, 17, 17)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_ypp6i")
+}, {
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_4ilkg")
+}, {
+"duration": 0.8,
+"texture": SubResource("AtlasTexture_156h3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s6rqq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hv7t5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sdoq6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s21ib")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vkln8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6564e")
+}],
+"loop": false,
+"name": &"atk",
+"speed": 17.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"noatk",
+"speed": 5.0
+}]
