@@ -1,0 +1,67 @@
+[gd_resource type="SpriteFrames" load_steps=10 format=3 uid="uid://b3ln4bpd4ck1a"]
+
+[ext_resource type="Texture2D" uid="uid://cbmap4qta8ldu" path="res://Sprites/The Adventurer - Free/Idle/idle.png" id="1_r821f"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1pu7e"]
+atlas = ExtResource("1_r821f")
+region = Rect2(0, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ok61f"]
+atlas = ExtResource("1_r821f")
+region = Rect2(48, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c4fef"]
+atlas = ExtResource("1_r821f")
+region = Rect2(96, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ovlec"]
+atlas = ExtResource("1_r821f")
+region = Rect2(144, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yeyl7"]
+atlas = ExtResource("1_r821f")
+region = Rect2(192, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ohn7a"]
+atlas = ExtResource("1_r821f")
+region = Rect2(240, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l78lr"]
+atlas = ExtResource("1_r821f")
+region = Rect2(288, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_euuwj"]
+atlas = ExtResource("1_r821f")
+region = Rect2(336, 0, 48, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1pu7e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ok61f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c4fef")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ovlec")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yeyl7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ohn7a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l78lr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_euuwj")
+}],
+"loop": true,
+"name": &"Idle_down",
+"speed": 5.0
+}]

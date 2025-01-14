@@ -7,6 +7,9 @@ var direction = Vector3.ZERO
 # Gravedad
 var gravity = -9.8
 
+# Ataque
+var atk:int = 5
+
 # Referencia al AnimatedSprite3D
 @onready var animated_sprite = $AnimatedSprite3D
 
@@ -23,6 +26,9 @@ func _physics_process(delta):
 		direction.x -= 1
 	if Input.is_action_pressed("derecha"):
 		direction.x += 1
+
+	if Input.is_action_just_pressed("atacar"):
+		_on_collision_shape_3d_2_tree_entered()
 
 	# Normalizamos la dirección para evitar que sea más rápida al moverse diagonalmente
 	direction = direction.normalized()
@@ -79,3 +85,9 @@ func update_animation():
 	# Cambiar de animación solo si es necesario
 	if animated_sprite.animation != new_animation:
 		animated_sprite.play(new_animation)
+
+func _on_collision_shape_3d_2_tree_entered():
+	if true:
+		print("ataque")
+	else:
+		pass
