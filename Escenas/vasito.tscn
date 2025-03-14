@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://320ulslv4gfv"]
+
+[ext_resource type="ArrayMesh" uid="uid://c1wd3k6u4e0ef" path="res://Models/vasito.obj" id="1_hxxqd"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_435jt"]
+height = 1.9726
+radius = 1.00686
+
+[node name="Vasito" type="MeshInstance3D"]
+transform = Transform3D(0.135, 0, 0, 0, 0.135, 0, 0, 0, 0.135, 0, 0, 0)
+mesh = ExtResource("1_hxxqd")
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+disable_mode = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.02489, 0)
+shape = SubResource("CylinderShape3D_435jt")

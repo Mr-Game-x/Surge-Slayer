@@ -162,7 +162,7 @@ skeleton = NodePath("../..")
 shape = SubResource("ConcavePolygonShape3D_a474u")
 
 [node name="NaturePack015" type="MeshInstance3D" parent="Terreno"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.88392, 0, 2.3224)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.89157, -0.239541, 2.32466)
 mesh = ExtResource("5_u2cws")
 skeleton = NodePath("../..")
 
